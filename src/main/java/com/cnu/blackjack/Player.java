@@ -14,6 +14,7 @@ public class Player {
     public Player(int seedMoney, Hand hand) {
         this.balance = seedMoney;
         this.hand = hand;
+        this.status = PlayerStatus.NONE;
     }
 
 
@@ -61,4 +62,7 @@ public class Player {
         return hand.drawCard();
     }
 
+    public void evaluateCards(Player player) {
+
+    }
 }
